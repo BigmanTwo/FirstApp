@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">熊猫</string>
+    <string name="but_name">按钮</string>
+    <string name="edit_text">请输入你的专业</string>
+    <string name="sex_man">男</string>
+    <string name="sex_woman">女</string>
+
+</resources>
