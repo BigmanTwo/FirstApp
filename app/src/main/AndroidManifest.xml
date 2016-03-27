@@ -21,6 +21,9 @@
         <activity android:name=".ChoiceActivity">
 
         </activity>
+        <activity android:name=".LoginActivity">
+
+        </activity>
     </application>
 
 </manifest>

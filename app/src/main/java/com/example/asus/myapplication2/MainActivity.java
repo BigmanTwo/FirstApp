@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-        private Button mButton,mButton1,mButton2;
+        private Button mButton,mButton1,mButton2,mButton3;
 //         private EditText mEditText;
 //    private Button mButton;
 
@@ -29,9 +29,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButton= (Button) findViewById(R.id.button1);
         mButton1= (Button) findViewById(R.id.button2);
         mButton2= (Button) findViewById(R.id.button3);
+        mButton3= (Button) findViewById(R.id.button4);
         mButton.setOnClickListener(this);
         mButton1.setOnClickListener(this);
         mButton2.setOnClickListener(this);
+        mButton3.setOnClickListener(this);
 //        mEditText= (EditText) findViewById(R.id.edit_text);
 //        mButton= (Button) findViewById(R.id.button1);
 
@@ -59,6 +61,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button3:
                 intent.setComponent(new ComponentName(MainActivity.this,ChoiceActivity.class));
+                startActivity(intent);
+                break;
+            case R.id.button4:
+                intent.setComponent(new ComponentName(MainActivity.this,LoginActivity.class));
                 startActivity(intent);
                 break;
         }
